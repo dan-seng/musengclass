@@ -316,14 +316,49 @@ footer {
     margin-top: 1rem;
 }
 
-.social-links a {
+.social-link {
     color: #8892b0;
     font-size: 1.5rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.social-links a:hover {
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.social-link.facebook:hover {
+    color: #1877f2;
+}
+
+.social-link.instagram:hover {
+    color: #e4405f;
+}
+
+.social-link.telegram:hover {
+    color: #0088cc;
+}
+
+.footer-section p .social-link {
+    font-size: 1.1rem;
     color: #64ffda;
+}
+
+.footer-section p .social-link:hover {
+    color: #0088cc;
+}
+
+@media screen and (max-width: 768px) {
+    .social-links {
+        gap: 1.5rem;
+    }
+    
+    .social-link {
+        font-size: 1.8rem;
+    }
 }
 
 .footer-bottom {
@@ -1151,6 +1186,38 @@ footer {
     color: #8892b0;
     margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+
+.map-link, .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64ffda;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(100, 255, 218, 0.1);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.map-link:hover, .contact-link:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+}
+
+.map-link i, .contact-link i {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .map-link, .contact-link {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .social-connect {
