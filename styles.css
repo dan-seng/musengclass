@@ -184,7 +184,7 @@ h1 {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
@@ -769,7 +769,7 @@ footer {
     background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95));
     z-index: 1;
     opacity: 0.9;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-out;
 }
 
 .bg-image-section:hover::before {
@@ -1879,4 +1879,130 @@ footer {
     background-color: rgba(100, 255, 218, 0.1);
     transform: translateY(-2px);
     box-shadow: 0 2px 8px rgba(100, 255, 218, 0.2);
+}
+
+/* Optimize animations for better performance */
+.gallery-item, .project-item, .event-item, .stat-item, .info-card {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Simplified animations */
+.gallery-item, .project-item, .event-item, .stat-item, .info-card {
+    transition: transform 0.15s ease-out;
+}
+
+.gallery-item:hover, .project-item:hover, .event-item:hover, .stat-item:hover, .info-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Simplified scroll animations */
+.scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease-out;
+}
+
+/* Simplified hover effects */
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+    transition: transform 0.15s ease-out;
+}
+
+/* Simplified background transitions */
+.bg-image-section::before {
+    transition: opacity 0.15s ease-out;
+}
+
+/* Simplified shadows */
+.gallery-item:hover, .project-item:hover, .event-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove complex animations */
+.hero-section h1 {
+    animation: none;
+}
+
+/* Remove transform animations on mobile */
+@media screen and (max-width: 768px) {
+    .gallery-item:hover, .project-item:hover, .event-item:hover, .stat-item:hover, .info-card:hover {
+        transform: none;
+    }
+    
+    .scroll-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    
+    .gallery-item:hover .overlay {
+        transform: translateY(0);
+        transition: none;
+    }
+}
+
+/* Remove complex keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Simplify contact link animations */
+.contact-link {
+    transition: background-color 0.15s ease-out;
+}
+
+.contact-link:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: none;
+    box-shadow: none;
+}
+
+/* Remove floating animations */
+.join-btn, .social-btn {
+    animation: none;
+}
+
+/* Simplify stat item animations */
+.stat-item:hover i {
+    transform: none;
+}
+
+/* Simplify class info animations */
+.class-info h2::after {
+    transition: none;
+}
+
+/* Simplify event item animations */
+.event-item:hover::after {
+    transform: none;
+}
+
+.event-item:hover .event-date {
+    transform: none;
+}
+
+/* Simplify social button animations */
+.social-btn::before {
+    transition: none;
+}
+
+.social-btn:hover::before {
+    left: 100%;
+}
+
+/* Simplify footer link animations */
+.social-links a::after {
+    transition: none;
+}
+
+.social-links a:hover::after {
+    transform: none;
 } 
