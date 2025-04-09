@@ -4,22 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineering 3rd Year class at Mekelle University - Class of 2024">
+    <meta name="keywords" content="Software Engineering, Mekelle University, Class of 2024, Computer Science">
+    <meta name="author" content="Software Engineering 3rd Year">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:;">
+    <meta property="og:title" content="Software Engineering 3rd Year - Mekelle University">
+    <meta property="og:description" content="Welcome to the Software Engineering 3rd Year class at Mekelle University">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Software Engineering 3rd Year</title>
     <link rel="icon" type="image/png" href="images/MU.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
 </head>
 
 <body>
     <div class="container">
-        <header class="hero-section">
+        <header class="hero-section" role="banner">
             <h1>Software Engineering 3rd Year</h1>
             <p class="subtitle">Mekelle University - Class of 2024</p>
         </header>
 
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html" class="active" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="list.html"><i class="fas fa-list"></i> List</a></li>
@@ -29,8 +40,14 @@
         <section class="info-section bg-image-section">
             <div class="class-info">
                 <h2><i class="fas fa-graduation-cap"></i> About Our Class</h2>
-                <p>Welcome to the Software Engineering 3rd Year class at Mekelle University. We are a diverse group of passionate students dedicated to learning and innovating in the field of software development. Our journey began with a shared vision of becoming skilled software engineers who can make a difference in the world of technology.</p>
-                <p>As a class, we believe in the power of collaboration, continuous learning, and pushing the boundaries of what's possible in software development. Our diverse backgrounds and perspectives enrich our learning environment, allowing us to approach problems from multiple angles and develop innovative solutions.</p>
+                <p>Welcome to the Software Engineering 3rd Year class at Mekelle University. We are a diverse group of
+                    passionate students dedicated to learning and innovating in the field of software development. Our
+                    journey began with a shared vision of becoming skilled software engineers who can make a difference
+                    in the world of technology.</p>
+                <p>As a class, we believe in the power of collaboration, continuous learning, and pushing the boundaries
+                    of what's possible in software development. Our diverse backgrounds and perspectives enrich our
+                    learning environment, allowing us to approach problems from multiple angles and develop innovative
+                    solutions.</p>
             </div>
 
             <div class="quick-stats">
@@ -52,24 +69,31 @@
         <section class="gallery bg-image-section gallery-bg">
             <div class="gallery-content">
                 <div class="gallery-item">
-                    <img src="images/img (1).jpg" alt="Class Photo">
+                    <img src="images/img (1).jpg" alt="Class group photo with students posing together">
                     <div class="overlay">
-                        <h3>Our Journey</h3>
-                        <p>From the first day of class to becoming a close-knit community of future software engineers</p>
+                        <h3>Group Photo</h3>
+                        <p>The person in the middle is the one who is the most Liked by the class</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/img (2).jpg" alt="Project Work">
+                    <img src="images/img (2).jpg" alt="Students taking a group selfie with Snapchat filters">
                     <div class="overlay">
-                        <h3>Learning Together</h3>
-                        <p>Collaborative learning and project development in our state-of-the-art facilities</p>
+                        <h3>Group Selfie</h3>
+                        <p>this snapchat thing</p>    
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/img (3).jpg" alt="Study Group">
+                    <img src="images/img (3).jpg" alt="Class group photo after sports activities">
                     <div class="overlay">
-                        <h3>Academic Excellence</h3>
-                        <p>Dedicated to achieving our academic goals while maintaining a supportive learning environment</p>
+                        <h3>Group Photo</h3>
+                        <p>After the games</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/img (8).jpg" alt="Class group photo after sports activities">
+                    <div class="overlay">
+                        <h3>Group Photo</h3>
+                        <p>After the games</p>
                     </div>
                 </div>
             </div>
@@ -78,13 +102,18 @@
         <section class="info-section bg-image-section">
             <div class="class-info">
                 <h2><i class="fas fa-star"></i> Our Achievements</h2>
-                <p>Throughout our journey, we have accomplished many significant milestones that have shaped us into the professionals we are today:</p>
+                <p>Throughout our journey, we have accomplished many significant milestones that have shaped us into the
+                    professionals we are today:</p>
                 <ul class="achievement-list">
-                    <li>Successfully developed and deployed multiple full-stack web applications using modern technologies</li>
-                    <li>Organized and conducted technical workshops attended by over 200 students from various departments</li>
+                    <li>Successfully developed and deployed multiple full-stack web applications using modern
+                        technologies</li>
+                    <li>Organized and conducted technical workshops attended by over 200 students from various
+                        departments</li>
                     <li>Maintained an average GPA of 3.5 across all software engineering courses</li>
-                    <li>Collaborated with local businesses to develop real-world solutions for their technical challenges</li>
-                    <li>Established a peer-mentoring program that has helped improve academic performance across the class</li>
+                    <li>Collaborated with local businesses to develop real-world solutions for their technical
+                        challenges</li>
+                    <li>Established a peer-mentoring program that has helped improve academic performance across the
+                        class</li>
                     <li>ይህን ሁሉ ብናቅድም አጋዥ አጥተን ተግባር ወፍ</li>
                 </ul>
             </div>
@@ -92,24 +121,31 @@
 
         <section class="gallery">
             <div class="gallery-item">
-                <img src="images/img (4).jpg" alt="Lab Work">
+                <img src="images/img (4).jpg" alt="Students decorating the classroom for an event">
                 <div class="overlay">
-                    <h3>Innovation Hub</h3>
-                    <p>Our creative space for developing new ideas and pushing the boundaries of technology</p>
+                    <h3>Decoration time</h3>
+                   <p>Decorating the place</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="images/img (5).jpg" alt="Group Activities">
+                <img src="images/img (5).jpg" alt="Class team members posing together showing friendship">
                 <div class="overlay">
-                    <h3>Team Spirit</h3>
-                    <p>Building lasting friendships and professional networks that will support us throughout our careers</p>
+                    <h3>Team Photo</h3>
+                    <p>Building real friendships</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="images/img (6).jpg" alt="Achievements">
+                <img src="images/img (11).jpg" alt="Class football team posing together in their sports attire">
                 <div class="overlay">
-                    <h3>Future Leaders</h3>
-                    <p>Preparing to make an impact in the tech industry with our innovative solutions and fresh perspectives</p>
+                    <h3>Football Team</h3>
+                    <p>They Play like RMA</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/image (1).jpg" alt="Official class group photo with all students">
+                <div class="overlay">
+                    <h3>Class Photo</h3>
+                    <p></p>
                 </div>
             </div>
         </section>
@@ -123,7 +159,8 @@
                     <li>Contribute to the advancement of technology through research and practical applications</li>
                     <li>Create a positive impact in our community by sharing our knowledge and skills</li>
                     <li>Build successful careers in software development while maintaining ethical standards</li>
-                    <li>Establish ourselves as leaders in the tech industry through continuous learning and innovation</li>
+                    <li>Establish ourselves as leaders in the tech industry through continuous learning and innovation
+                    </li>
                     <li>Foster a culture of collaboration and knowledge-sharing within our professional community</li>
                 </ul>
             </div>
@@ -132,22 +169,26 @@
         <section class="info-section bg-image-section projects-section">
             <div class="class-info">
                 <h2><i class="fas fa-laptop-code"></i> Our Projects</h2>
-                <p>Our class has been involved and will be involved in various exciting projects that showcase our skills and creativity:</p>
+                <p>Our class has been involved and will be involved in various exciting projects that showcase our
+                    skills and creativity:</p>
                 <div class="project-grid">
                     <div class="project-item">
                         <i class="fas fa-mobile-alt"></i>
                         <h3>Mobile Apps</h3>
-                        <p>Developing innovative mobile applications that solve real-world problems, including a healthcare management system and a student resource platform</p>
+                        <p>Developing innovative mobile applications that solve real-world problems, including a
+                            healthcare management system and a student resource platform</p>
                     </div>
                     <div class="project-item">
                         <i class="fas fa-globe"></i>
                         <h3>Web Development</h3>
-                        <p>Creating responsive web applications using modern frameworks and best practices, focusing on user experience and performance</p>
+                        <p>Creating responsive web applications using modern frameworks and best practices, focusing on
+                            user experience and performance</p>
                     </div>
                     <div class="project-item">
                         <i class="fas fa-robot"></i>
                         <h3>AI & ML</h3>
-                        <p>Exploring artificial intelligence solutions, including predictive analytics and automated decision-making systems</p>
+                        <p>Exploring artificial intelligence solutions, including predictive analytics and automated
+                            decision-making systems</p>
                     </div>
                     <div class="project-item">
                         <i class="fas fa-shield-alt"></i>
@@ -167,21 +208,26 @@
                         <div class="event-date">March 2025</div>
                         <div class="event-content">
                             <h3>Annual Hackathon</h3>
-                            <p>A 48-hour coding competition where teams will develop innovative solutions for real-world challenges. The event will feature industry mentors, workshops, and networking opportunities.</p>
+                            <p>A 48-hour coding competition where teams will develop innovative solutions for real-world
+                                challenges. The event will feature industry mentors, workshops, and networking
+                                opportunities.</p>
                         </div>
                     </div>
                     <div class="event-item">
                         <div class="event-date">April 2025</div>
                         <div class="event-content">
                             <h3>Tech Workshop Series</h3>
-                            <p>A series of workshops led by industry experts covering topics such as cloud computing, DevOps, and emerging technologies. These sessions will provide hands-on experience and valuable insights.</p>
+                            <p>A series of workshops led by industry experts covering topics such as cloud computing,
+                                DevOps, and emerging technologies. These sessions will provide hands-on experience and
+                                valuable insights.</p>
                         </div>
                     </div>
                     <div class="event-item">
                         <div class="event-date">May 2025</div>
                         <div class="event-content">
                             <h3>Project Showcase</h3>
-                            <p>An exhibition of our best projects, where students will demonstrate their work to industry professionals, potential employers, and the university community.</p>
+                            <p>An exhibition of our best projects, where students will demonstrate their work to
+                                industry professionals, potential employers, and the university community.</p>
                         </div>
                     </div>
                 </div>
@@ -191,11 +237,14 @@
         <section class="info-section bg-image-section join-section">
             <div class="class-info">
                 <h2><i class="fas fa-handshake"></i> Join Our Community</h2>
-                <p>We invite you to be part of our growing network of software engineers and innovators. Our community is built on the principles of collaboration, continuous learning, and mutual support. Whether you're a student, industry professional, or technology enthusiast, there's a place for you in our community.</p>
+                <p>We invite you to be part of our growing network of software engineers and innovators. Our community
+                    is built on the principles of collaboration, continuous learning, and mutual support. Whether you're
+                    a student, industry professional, or technology enthusiast, there's a place for you in our
+                    community.</p>
                 <div class="join-buttons">
-                    <a href="#" class="join-btn"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="#" class="join-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="#" class="join-btn"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="https://github.com/dan-seng" class="join-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#" class="join-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="join-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i> Discord</a>
                 </div>
             </div>
         </section>
@@ -204,16 +253,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-envelope"></i> Email: contact@example.com</p>
-                    <p><i class="fas fa-phone"></i> Phone: +251 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> Email: da16gi@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> Phone: +251945012123</p>
                 </div>
                 <div class="footer-section">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/dan16son/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_dan_el" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -222,7 +271,7 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
